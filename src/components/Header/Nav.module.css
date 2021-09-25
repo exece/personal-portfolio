@@ -1,0 +1,15 @@
+
+.nav-item {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.nav-item:hover {
+  box-shadow: 0 1rem 2rem rgba(black, 0.15);
+  transform: translateY(-3px);
+}
+
+.nav-item:active {
+  box-shadow: 0 1rem 1rem rgba(black, 0.15);
+  transform: translateY(-1px);
+}
