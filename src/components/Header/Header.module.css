@@ -1,7 +1,11 @@
 .header {
     background-image: linear-gradient(
       to right bottom,
-      #4141cc,
-      #1d1d61cc
-    );
+      #3f3f3fd2,
+      #202020d2
+    ), url(https://images.pexels.com/photos/3003098/pexels-photo-3003098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-position: left, bottom;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Flex, Text, Spacer } from "@chakra-ui/react";
+import { ArrowDownIcon } from '@chakra-ui/icons'
 import Nav from "./Nav";
 import { ClassNames } from "@emotion/react";
 
@@ -14,7 +15,8 @@ const header = () => {
       backgroundColor="orange"
       color="white"
       width="100%"
-      height="70vh"
+      height="95vh"
+      backgroundColor="red"
       className={classes.header}
     >
       <Text
@@ -40,6 +42,9 @@ const header = () => {
       </Text>
       <Box position="absolute" bottom="30%" width="100%">
         <Nav />
+      </Box>
+      <Box position="absolute" bottom="12%" width="100%">
+          <ArrowDownIcon w={6} h={6} />
       </Box>
     </Flex>
   );
