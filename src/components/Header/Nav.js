@@ -10,13 +10,13 @@ const Nav = () => {
   return (
     <Flex flexDirection="row" justifyContent="center">
       <Box className={classes["nav-item"]} px="2rem">
-        <Link><ScrollLink to="about" spy={true} smooth={true}>About</ScrollLink></Link>
+        <Link><ScrollLink to="about" spy={true} smooth={true} isDynamic={true}>About</ScrollLink></Link>
       </Box>
       <Box className={classes["nav-item"]} px="2rem">
-        <Link ><ScrollLink to="about" spy={true} smooth={true}>Projects</ScrollLink></Link>
+        <Link ><ScrollLink to="projects" spy={true} smooth={true} isDynamic={true}>Projects</ScrollLink></Link>
       </Box>
       <Box className={classes["nav-item"]} px="2rem">
-        <Link><ScrollLink to="about" spy={true} smooth={true}>Contact</ScrollLink></Link>
+        <Link><ScrollLink to="contact" spy={true} smooth={true} isDynamic={true} offset={100}>Contact</ScrollLink></Link>
       </Box>
     </Flex>
   );

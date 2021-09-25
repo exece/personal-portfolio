@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.scroll-snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  /*background-color: red; */
+  
+}
+
+.scroll-snap-item {
+  scroll-snap-align: top;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

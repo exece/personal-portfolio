@@ -5,11 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { ChakraProvider } from "@chakra-ui/react";
+import { SmoothProvider } from 'react-smooth-scrolling';
 
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>
+    <SmoothProvider skew={true}>
       <App />
+      </SmoothProvider>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")

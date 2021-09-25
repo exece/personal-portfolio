@@ -15,8 +15,7 @@ const header = () => {
       backgroundColor="orange"
       color="white"
       width="100%"
-      height="95vh"
-      backgroundColor="red"
+      height="100vh"
       className={classes.header}
     >
       <Text

@@ -3,7 +3,7 @@ import { Flex, Text, Button, Box, Link } from "@chakra-ui/react";
 
 const About = () => {
   return (
-    <Box backgroundColor="#f2f2f4" useRef='about'>
+    <Box backgroundColor="#f2f2f4" useRef='about' h='100vh'>
       <Flex
         height="5rem"
         justifyContent="center"
