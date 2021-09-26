@@ -31,6 +31,16 @@ const Projects = (props) => {
         <GridItem><ProjectCard /></GridItem>
         <GridItem><ProjectCard /></GridItem>
         <GridItem><ProjectCard /></GridItem>
+        
+        <GridItem><ProjectCard /></GridItem>
+        <GridItem><ProjectCard /></GridItem>
+        <GridItem><ProjectCard /></GridItem>
+        <GridItem><ProjectCard /></GridItem>
+
+        <GridItem><ProjectCard /></GridItem>
+        <GridItem><ProjectCard /></GridItem>
+        <GridItem><ProjectCard /></GridItem>
+        <GridItem><ProjectCard /></GridItem>
 
       </Grid>
     </Box>

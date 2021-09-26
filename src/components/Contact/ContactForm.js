@@ -14,7 +14,7 @@ import {
 
 const ContactForm = () => {
     return (
-        <Flex flexDirection="column" w="60%" alignItems="center" justifyContent="center">        
+        <Flex flexDirection="column" alignItems="center" justifyContent="center">        
             <FormControl id="first-name" isRequired>
                 <FormLabel>First name</FormLabel>
                 <Input placeholder="First name" />
