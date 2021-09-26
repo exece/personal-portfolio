@@ -30,9 +30,8 @@
 
 .scroll-snap-container {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  /*background-color: red; */
-  
+  /* Reserve space for header plus some extra space for sneak peeking. */
+  scroll-padding-top: 5vh;  
 }
 
 .scroll-snap-item {

@@ -10,9 +10,9 @@ import {
   GridItem,
 } from "@chakra-ui/react";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
-    <Box backgroundColor="white">
+    <Box id={props.id} backgroundColor="white">
       <Text fontSize="2rem" fontWeight="bold" p="2rem">
         Some Projects
       </Text>

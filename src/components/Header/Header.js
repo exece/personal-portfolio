@@ -6,9 +6,11 @@ import { ClassNames } from "@emotion/react";
 
 import classes from "./Header.module.css";
 
-const header = () => {
+import {Link as ScrollLink} from 'react-scroll';
+const header = (props) => {
   return (
     <Flex
+        id={props.id}
       flexDirection="column"
       alignItems="center"
       position="relative"
@@ -43,7 +45,7 @@ const header = () => {
         <Nav />
       </Box>
       <Box position="absolute" bottom="12%" width="100%">
-          <ArrowDownIcon w={6} h={6} />
+        <ScrollLink to="about" spy={true} smooth={true} isDynamic={true}><ArrowDownIcon w={6} h={6} cursor="pointer"/></ScrollLink>
       </Box>
     </Flex>
   );

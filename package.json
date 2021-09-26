@@ -17,6 +17,7 @@
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-smooth-scrolling": "^1.0.2",
+    "react-snap-scroll": "0.0.5",
     "scroll-snap": "^3.2.4",
     "web-vitals": "^1.1.2"
   },

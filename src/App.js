@@ -8,19 +8,11 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <div className="App">
-      <div className="scroll-snap-container">
-        <div id="header" className="scroll-snap-item">
-          <Header />
-        </div>
-        <div id="about" className="scroll-snap-item">
-          <About />
-        </div>
-      </div>
-      <div id="projects">
-        <Projects />
-      </div>
-      <div id="contact">
-        <Contact />
+      <div className={"scroll-snap-container"}>
+        <div className={"scroll-snap-item"}><Header id={"header"}/></div>
+        <div className={"scroll-snap-item"}><About id={"about"}/></div>
+        <Projects id={"projects"} />
+        <Contact id={"contact"} />
       </div>
     </div>
   );

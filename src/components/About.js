@@ -1,9 +1,9 @@
 import React from "react";
 import { Flex, Text, Button, Box, Link } from "@chakra-ui/react";
 
-const About = () => {
+const About = (props) => {
   return (
-    <Box backgroundColor="#f2f2f4" useRef='about' h='100vh'>
+    <Box id={props.id} backgroundColor="#f2f2f4" useRef='about' h='100vh'>
       <Flex
         height="5rem"
         justifyContent="center"
