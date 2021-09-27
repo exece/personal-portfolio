@@ -12,15 +12,15 @@ import {
 
 const Projects = (props) => {
   return (
-    <Box id={props.id} backgroundColor="white">
+    <Box id={props.id} backgroundColor="white" py="5rem">
       <Text fontSize="2rem" fontWeight="bold" p="2rem">
         Some Projects
       </Text>
       <Grid
         templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(4, 1fr)"
+        templateColumns="repeat(3, 1fr)"
         gap="4rem"
-        px="10rem"
+        pb="10rem"
       >
         <GridItem><ProjectCard /></GridItem>
         <GridItem><ProjectCard /></GridItem>

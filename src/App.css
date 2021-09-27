@@ -32,6 +32,7 @@
   scroll-snap-type: y mandatory;
   /* Reserve space for header plus some extra space for sneak peeking. */
   scroll-padding-top: 5vh;  
+  /*background-color: #f2f2f4;*/
 }
 
 .scroll-snap-item {

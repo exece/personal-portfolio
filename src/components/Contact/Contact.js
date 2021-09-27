@@ -13,12 +13,12 @@ import {
 
 const Contact = (props) => {
   return (
-    <Box id={props.id} width="100%">
+    <Box id={props.id} width="100%" backgroundColor="#f2f2f4">
       <Text fontSize="2rem" fontWeight="bold" p="2rem">
         Contact me
       </Text>
       <Flex width="100%" justifyContent="center">
-        <Box width="50%" p="5">
+        <Box width="80%" p="5">
           <Card>
             <ContactForm></ContactForm>
           </Card>
