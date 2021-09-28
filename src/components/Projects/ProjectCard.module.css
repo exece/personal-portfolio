@@ -1,0 +1,70 @@
+.project {
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  box-sizing: border-box;
+  min-height: 275px;
+  min-width: 250px;
+  margin: 16px 12px 0;
+  background: #e91e63;
+  border-radius: 6px;
+  position: relative;
+  flex: 1;
+  opacity: 1;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: margin 0.475s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: auto;
+  flex-direction: column;
+  margin: 24px;
+}
+
+.project-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background: rgba(37, 37, 37, 0.85);
+  transition: opacity 0.375s cubic-bezier(1, 0, 0, 1);
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.project-overlay__link {
+    padding: 10px 26px;
+    border: 2px solid #e91e63;
+    transition: all .375s cubic-bezier(.645,.045,.355,1);
+    z-index: 3;
+}
+
+.project-overlay__link:active {
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.project:hover .project-overlay {
+    opacity: 1;
+}
+
+
+
+

@@ -1,5 +1,6 @@
 import React from "react";
-import ProjectCard from './ProjectCard';
+import ProjectCard from "./ProjectCard";
+
 import {
   Flex,
   Text,
@@ -9,6 +10,7 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
+import bath_bomb from '../../assets/project_images/bathbombs_landing.jpg';
 
 const Projects = (props) => {
   return (
@@ -19,28 +21,16 @@ const Projects = (props) => {
       <Grid
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(3, 1fr)"
-        gap="4rem"
+        rowGap="5rem"
+        columnGap="2rem"
         pb="10rem"
       >
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
-        <GridItem><ProjectCard /></GridItem>
+        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
+        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
+        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
+        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
+        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
+        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
 
       </Grid>
     </Box>
