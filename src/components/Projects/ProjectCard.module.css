@@ -6,7 +6,7 @@
   min-height: 275px;
   min-width: 250px;
   margin: 16px 12px 0;
-  background: #e91e63;
+  background: #2B7879;
   border-radius: 6px;
   position: relative;
   flex: 1;
@@ -50,7 +50,7 @@
 
 .project-overlay__link {
     padding: 10px 26px;
-    border: 2px solid #e91e63;
+    border: 2px solid #2B7879;
     transition: all .375s cubic-bezier(.645,.045,.355,1);
     z-index: 3;
 }

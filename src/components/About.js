@@ -21,7 +21,7 @@ const About = (props) => {
         pt="8rem"
         pb="3rem"
       >
-        <Text fontSize="2rem" fontWeight="bold">
+        <Text fontSize="2rem" my='5rem' fontWeight="bold">
           Who am I?
         </Text>
       </Flex>
@@ -30,7 +30,7 @@ const About = (props) => {
         gap="4rem"
       >
         <Box px="2rem">
-          <Text fontSize="1.5rem" fontWeight="bold" textAlign="start">
+          <Text fontSize="1.5rem" fontWeight="bold" textAlign="start" mb="1rem">
             Hello!
           </Text>
           <Text fontSize="1rem" textAlign="start">
@@ -53,8 +53,8 @@ const About = (props) => {
           </Flex>
         </Box>
         <Box>
-          <Text fontSize="1.5rem" fontWeight="bold" textAlign="start">
-            Skills!
+          <Text fontSize="1.5rem" fontWeight="bold" textAlign="start" mb="1rem">
+            My Skills
           </Text>
           <Flex flexWrap="wrap" w="80%">
             <SkillBlock skill={"HTML"} />

@@ -6,6 +6,11 @@ import classes from "./ProjectCard.module.css";
 import { Fragment } from "react";
 
 const ProjectCard = ({ title, image }) => {
+
+    const OpenModalHandler = () => {
+
+    }
+
   return (
     <>
       <Box className={classes.project}>
@@ -25,8 +30,9 @@ const ProjectCard = ({ title, image }) => {
           </Card>
         </Box>
         <Box className={classes["project-overlay"]}>
-          <Link className={classes["project-overlay__link"]} color="white" textDecor="none">Learn More</Link>
+          <Link className={classes["project-overlay__link"]} color="white" textDecor="none" onClick={OpenModalHandler}>Learn More</Link>
         </Box>
+        
       </Box>
     </>
   );

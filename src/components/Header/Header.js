@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Flex, Text, Spacer, Link } from "@chakra-ui/react";
 import { ArrowDownIcon } from "@chakra-ui/icons";
 import Nav from "./Nav";
-import Resume from "../Resume";
+
 import { ClassNames } from "@emotion/react";
 
 import classes from "./Header.module.css";
@@ -21,19 +21,6 @@ const header = (props) => {
         height="100vh"
         className={classes.header}
       >
-        <Flex
-          position="absolute"
-          bottom="90%"
-          width="100%"
-          flexDir="column"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Link justifyContent="center">
-            <Resume />
-          </Link>
-          <Text>Resume</Text>
-        </Flex>
 
         <Text
           position="absolute"
