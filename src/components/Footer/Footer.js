@@ -38,9 +38,8 @@ const Footer = () => {
           <Text fontSize="1.6rem" fontWeight="bold">
             Socials
           </Text>
-          <Link to="/">About Us</Link>
-          <Link to="/">Learn More</Link>
-          <Link to="/">Sustainability</Link>
+          <Link to="/https://github.com/exece">Github</Link>
+          <Link to="/https://www.linkedin.com/in/ryan-evans-schwede/">LinkedIn</Link>
         </VStack>
       </Grid>
       <Box>

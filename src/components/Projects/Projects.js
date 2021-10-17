@@ -14,7 +14,7 @@ import bath_bomb from '../../assets/project_images/bathbombs_landing.jpg';
 
 const Projects = (props) => {
   return (
-    <Box id={props.id} backgroundColor="white" py="5rem">
+    <Box id={props.id} backgroundColor="white" py="5rem" px="5rem">
       <Text fontSize="2rem" fontWeight="bold" p="2rem">
         Some Projects
       </Text>
