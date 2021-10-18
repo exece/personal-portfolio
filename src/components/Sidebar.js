@@ -15,8 +15,8 @@ const Sidebar = () => {
     <div>
       <Box
         position="fixed"
-        width="50px"
-        backgroundColor="rgba(153,153,153,.6)"
+        width="40px"
+        backgroundColor="var(--chakra-colors-teal-600)"
         left="0"
         bottom="50%"
         zIndex="5"

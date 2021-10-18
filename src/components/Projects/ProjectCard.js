@@ -1,16 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { render } from "react-dom";
 import Card from "../UI/Card";
-import { Flex, Text, Button, Box, Link, Image, Modal } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Button,
+  Box,
+  Link,
+  Image,
+} from "@chakra-ui/react";
+
 import classes from "./ProjectCard.module.css";
-import { Fragment } from "react";
 
-const ProjectCard = ({ title, image }) => {
 
-    const OpenModalHandler = () => {
 
-    }
 
+const ProjectCard = ({ title, image, onClick }) => {
   return (
     <>
       <Box className={classes.project}>
@@ -30,9 +35,15 @@ const ProjectCard = ({ title, image }) => {
           </Card>
         </Box>
         <Box className={classes["project-overlay"]}>
-          <Link className={classes["project-overlay__link"]} color="white" textDecor="none" onClick={OpenModalHandler}>Learn More</Link>
+          <Link
+            className={classes["project-overlay__link"]}
+            color="white"
+            textDecor="none"
+            onClick={onClick}
+          >
+            Learn More
+          </Link>
         </Box>
-        
       </Box>
     </>
   );

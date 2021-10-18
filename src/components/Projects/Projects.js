@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
+import ProjectModal from './ProjectModal';
 
 import {
   Flex,
@@ -10,9 +11,10 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
-import bath_bomb from '../../assets/project_images/bathbombs_landing.jpg';
+import bath_bomb from "../../assets/project_images/bathbombs_landing.jpg";
 
 const Projects = (props) => {
+
   return (
     <Box id={props.id} backgroundColor="white" py="5rem" px="5rem">
       <Text fontSize="2rem" fontWeight="bold" p="2rem">
@@ -25,14 +27,30 @@ const Projects = (props) => {
         columnGap="2rem"
         pb="10rem"
       >
-        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
-        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
-        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
-        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
-        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
-        <GridItem><ProjectCard title="Bath Bombs" image={bath_bomb} /></GridItem>
-
+        <GridItem>
+          <ProjectCard
+            title="Bath Bombs"
+            image={bath_bomb}
+            onClick={props.onClick}
+          />
+        </GridItem>
+        <GridItem>
+          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+        </GridItem>
+        <GridItem>
+          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+        </GridItem>
+        <GridItem>
+          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+        </GridItem>
+        <GridItem>
+          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+        </GridItem>
+        <GridItem>
+          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+        </GridItem>
       </Grid>
+      <ProjectModal isOpen={props.isOpen} onClose={props.onClose} />
     </Box>
   );
 };
