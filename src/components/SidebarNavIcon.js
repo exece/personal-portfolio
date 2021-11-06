@@ -1,10 +1,13 @@
 import React from "react";
-import { Box, Link } from "@chakra-ui/react";
+import { Box, Link, Button } from "@chakra-ui/react";
 
 const SidebarNavIcon = (props) => {
   return (
     <div>
-      <Link href={props.link} target="_blank">
+      <Link
+        href={props.link}
+        target="_blank"
+      >
         <Box
           borderTop="1px"
           borderBottom="1px"
@@ -15,12 +18,15 @@ const SidebarNavIcon = (props) => {
             background: "rgba(153,153,153,1)",
           }}
         >
-
-            <img
-              src={props.icon}
-              style={{ width: "100%", height: "100%", filter: "invert(96%) sepia(100%) saturate(16%) hue-rotate(261deg) brightness(105%) contrast(104%)" }}
-            />
-
+          <img
+            src={props.icon}
+            style={{
+              width: "100%",
+              height: "100%",
+              filter:
+                "invert(96%) sepia(100%) saturate(16%) hue-rotate(261deg) brightness(105%) contrast(104%)",
+            }}
+          />
         </Box>
       </Link>
     </div>

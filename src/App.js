@@ -15,25 +15,21 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   const ModalOpenHandler = () => {
-    console.log("clicked");
     setIsOpen(true);
   };
 
   const ModalCloseHandler = () => {
-    console.log("clicked");
     setIsOpen(false);
   };
-  //<Modal isOpen={isOpen} onClose={ModalCloseHandler}>Hello World!</Modal>
+
   return (
     <div className="App">
-      <div className={"scroll-snap-container"}>
+      <div><Header id={"header"}/></div>
+        <div><Projects id={"projects"} isOpen={isOpen} onClose={ModalCloseHandler} onClick={ModalOpenHandler}/></div>
         <Sidebar />
-        <div className={"scroll-snap-item"}><Header id={"header"}/></div>
-        <div className={"scroll-snap-item"}><About id={"about"}/></div>
-        <Projects id={"projects"} isOpen={isOpen} onClose={ModalCloseHandler} onClick={ModalOpenHandler}/>
+        <div><About id={"about"}/></div>
         <Contact id={"contact"} />
         <Footer />
-      </div>
     </div>
   );
 }

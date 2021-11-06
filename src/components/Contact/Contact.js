@@ -10,10 +10,11 @@ import {
   Flex,
   Text
 } from "@chakra-ui/react"
+import classes from "./Contact.module.css";
 
 const Contact = (props) => {
   return (
-    <Box id={props.id} width="100%" backgroundColor="#f2f2f4">
+    <Box id={props.id} width="100%" backgroundColor="#f2f2f4" pb="5rem">
       <Text fontSize="2rem" fontWeight="bold" p="2rem">
         Contact me
       </Text>

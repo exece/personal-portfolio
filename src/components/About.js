@@ -10,8 +10,8 @@ const About = (props) => {
       id={props.id}
       backgroundColor="#f2f2f4"
       useRef="about"
-      h="100vh"
       px="5rem"
+      pb="5rem"
       className={classes.about}
     >
       <Flex
@@ -26,7 +26,8 @@ const About = (props) => {
         </Text>
       </Flex>
       <Grid
-        templateColumns={["repeat(2, 1fr)}"]}
+      
+        templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)"]}
         gap="4rem"
       >
         <Box px="2rem">
@@ -52,11 +53,11 @@ const About = (props) => {
             </ScrollLink>
           </Flex>
         </Box>
-        <Box>
+        <Box px="2rem">
           <Text fontSize="1.5rem" fontWeight="bold" textAlign="start" mb="1rem">
             My Skills
           </Text>
-          <Flex flexWrap="wrap" w="80%">
+          <Flex flexWrap="wrap" w="100%">
             <SkillBlock skill={"HTML"} />
             <SkillBlock skill={"CSS"} />
             <SkillBlock skill={"React"} />

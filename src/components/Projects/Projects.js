@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectModal from './ProjectModal';
+import ProjectModal from "./ProjectModal";
 
 import {
   Flex,
@@ -14,45 +14,84 @@ import {
 import bath_bomb from "../../assets/project_images/bathbombs_landing.jpg";
 
 const Projects = (props) => {
+  //Bath Bombs
 
   return (
-    <Box id={props.id} backgroundColor="white" py="5rem" px="5rem">
+    <Box id={props.id} backgroundColor="white" py="5rem" px="3rem">
       <Text fontSize="2rem" fontWeight="bold" p="2rem">
         Some Projects
       </Text>
       <Grid
         templateRows="repeat(2, 1fr)"
-        templateColumns="repeat(3, 1fr)"
-        rowGap="5rem"
-        columnGap="2rem"
-        pb="10rem"
+        templateColumns={[
+          "repeat(1, 1fr)",
+          "repeat(1, 1fr)",
+          "repeat(2, 1fr)",
+          "repeat(3, 1fr)",
+        ]}
+        rowGap="3rem"
+        columnGap="1rem"
+        pb="5rem"
       >
         <GridItem>
           <ProjectCard
             title="Bath Bombs"
             image={bath_bomb}
             onClick={props.onClick}
+            onClose={props.onClose}
+            isOpen={props.isOpen}
           />
         </GridItem>
         <GridItem>
-          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+          <ProjectCard
+            title={"test0"}
+            image={bath_bomb}
+            onClick={props.onClick}
+            onClose={props.onClose}
+            isOpen={props.isOpen}
+          />
         </GridItem>
         <GridItem>
-          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+          <ProjectCard
+            title={"test1"}
+            image={bath_bomb}
+            onClick={props.onClick}
+            onClose={props.onClose}
+            isOpen={props.isOpen}
+          />
         </GridItem>
         <GridItem>
-          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+          <ProjectCard
+            title={"test2"}
+            image={bath_bomb}
+            onClick={props.onClick}
+            onClose={props.onClose}
+            isOpen={props.isOpen}
+          />
         </GridItem>
         <GridItem>
-          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+          <ProjectCard
+            title={"test3"}
+            image={bath_bomb}
+            onClick={props.onClick}
+            onClose={props.onClose}
+            isOpen={props.isOpen}
+          />
         </GridItem>
         <GridItem>
-          <ProjectCard title="Bath Bombs" image={bath_bomb} onClick={props.onClick} />
+          <ProjectCard
+            title={"test4"}
+            image={bath_bomb}
+            onClick={props.onClick}
+            onClose={props.onClose}
+            isOpen={props.isOpen}
+          />
         </GridItem>
       </Grid>
-      <ProjectModal isOpen={props.isOpen} onClose={props.onClose} />
+      
+      
     </Box>
-  );
+  ); //<ProjectModal isOpen={props.isOpen} onClose={props.onClose} title={"title"}/>
 };
 
 export default Projects;

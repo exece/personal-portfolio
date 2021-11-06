@@ -11,15 +11,16 @@ import {
 } from "@chakra-ui/react";
 
 import classes from "./ProjectCard.module.css";
+import ProjectModal from './ProjectModal';
 
 
 
 
-const ProjectCard = ({ title, image, onClick }) => {
+const ProjectCard = ({ title, image, onClick, isOpen, onClose }) => {
   return (
     <>
       <Box className={classes.project}>
-        <Box className={classes["project-card"]}>
+        <Box className={classes["project-card"]} >
           <Card>
             <Flex flexDir="column" justifyContent="center" alignItems="center">
               <Box>
@@ -34,7 +35,7 @@ const ProjectCard = ({ title, image, onClick }) => {
             </Flex>
           </Card>
         </Box>
-        <Box className={classes["project-overlay"]}>
+        <Box className={classes["project-overlay"]} onClick={onClick}>
           <Link
             className={classes["project-overlay__link"]}
             color="white"
@@ -45,6 +46,7 @@ const ProjectCard = ({ title, image, onClick }) => {
           </Link>
         </Box>
       </Box>
+      <ProjectModal isOpen={isOpen} onClose={onClose} title={"title"}/>
     </>
   );
 };

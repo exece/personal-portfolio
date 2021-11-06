@@ -21,7 +21,6 @@ const header = (props) => {
         height="100vh"
         className={classes.header}
       >
-
         <Text
           position="absolute"
           bottom="45%"
@@ -29,6 +28,7 @@ const header = (props) => {
           fontWeight="bold"
           letterSpacing="2rem"
           textAlign="center"
+          pb='2rem'
         >
           Rya
           <span style={{ letterSpacing: "0px" }}>n</span>
@@ -47,7 +47,7 @@ const header = (props) => {
           <Nav />
         </Box>
         <Box position="absolute" bottom="12%" width="100%">
-          <ScrollLink to="about" spy={true} smooth={true} isDynamic={true}>
+          <ScrollLink to="projects" spy={true} smooth={true} isDynamic={true}>
             <ArrowDownIcon w={6} h={6} cursor="pointer" />
           </ScrollLink>
         </Box>
