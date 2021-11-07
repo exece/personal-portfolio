@@ -28,7 +28,7 @@ const header = (props) => {
           fontWeight="bold"
           letterSpacing="2rem"
           textAlign="center"
-          pb='2rem'
+          pb='4rem'
         >
           Rya
           <span style={{ letterSpacing: "0px" }}>n</span>
@@ -39,6 +39,7 @@ const header = (props) => {
           fontSize="2rem"
           fontWeight="bold"
           letterSpacing="1rem"
+          mx="5rem"
         >
           Evans-Schwed
           <span style={{ letterSpacing: "0px" }}>e</span>

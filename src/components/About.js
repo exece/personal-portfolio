@@ -26,11 +26,10 @@ const About = (props) => {
         </Text>
       </Flex>
       <Grid
-      
         templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)"]}
         gap="4rem"
       >
-        <Box px="2rem">
+        <Box>
           <Text fontSize="1.5rem" fontWeight="bold" textAlign="start" mb="1rem">
             Hello!
           </Text>
@@ -53,7 +52,7 @@ const About = (props) => {
             </ScrollLink>
           </Flex>
         </Box>
-        <Box px="2rem">
+        <Box >
           <Text fontSize="1.5rem" fontWeight="bold" textAlign="start" mb="1rem">
             My Skills
           </Text>
