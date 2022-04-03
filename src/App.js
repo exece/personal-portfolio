@@ -10,7 +10,8 @@ import Sidebar from "./components/Sidebar";
 import ProjectModal from './components/Projects/ProjectModal';
 import Modal from './components/UI/Modal';
 
-//
+
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 

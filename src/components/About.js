@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Flex, Text, Button, Box, Link, Grid } from "@chakra-ui/react";
 import classes from "./About.module.css";
 import { Link as ScrollLink } from "react-scroll";
 import SkillBlock from "./SkillBlock";
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const About = (props) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000});
+  }, []);
+
   return (
     <Box
       id={props.id}
@@ -21,7 +28,7 @@ const About = (props) => {
         pt="8rem"
         pb="3rem"
       >
-        <Text fontSize="2rem" my='5rem' fontWeight="bold">
+        <Text fontSize="2rem" my='5rem' fontWeight="bold" data-aos="fade-left">
           Who am I?
         </Text>
       </Flex>
@@ -29,7 +36,7 @@ const About = (props) => {
         templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)"]}
         gap="4rem"
       >
-        <Box>
+        <Box className={classes['about-section']} data-aos="fade-up">
           <Text fontSize="1.5rem" fontWeight="bold" textAlign="start" mb="1rem">
             Hello!
           </Text>
@@ -52,7 +59,7 @@ const About = (props) => {
             </ScrollLink>
           </Flex>
         </Box>
-        <Box >
+        <Box className={classes['about-section']} data-aos="fade-up">
           <Text fontSize="1.5rem" fontWeight="bold" textAlign="start" mb="1rem">
             My Skills
           </Text>
