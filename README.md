@@ -1,2 +1,4 @@
 # personal-portfolio
- My own, personal portfolio website built with React and Material UI
+personal portfolio website built with React and Material UI
+
+![Screenshot of website](https://raw.githubusercontent.com/exece/personal-portfolio/main/personal-porfolio.jpg)
